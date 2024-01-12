@@ -48,18 +48,23 @@
         <figure class="avatar-box">
           <img src="./assets/images/my-avatar.png" alt="Krunal Rana" width="80">
         </figure>
+        <style>
+          @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+          }
+
+          #volumeIcon.playing {
+            animation: pulse 1s infinite;
+          }
+        </style>
 
         <div class="info-content">
           <h1 class="name" title="Krunal Rana">Krunal Rana <a class="audio-clip" style="font-size: 20px; float: inline-end; margin-top: 5px; margin-left: -18px;" onclick="fullnameplayAudio()"><i class="fa fa-volume-up" ></i>  </a> </h1>
 
           <p class="title">Full Stack Developer | Data Engg</p>
         </div>
-        <script>
-          function fullnameplayAudio() {
-              var audio = new Audio('/assets/intro.mp3'); // Replace 'your-audio-file.mp3' with the actual path to your audio file
-              audio.play();
-            }
-        </script>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
@@ -219,18 +224,18 @@
         </header>
 
         <section class="about-text">
-          <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+          <p style="text-align: justify;">
+            👋 Hey there! I'm a passionate and innovative Full Stack Developer with a strong foundation in Electronic and Communication Engineering, having successfully completed my bachelor's degree. Over the past <span id="experiencedynamic" style="display: inline;"></span> years, I've been immersed in the world of software development, specializing in Python. My journey as a Full Stack Developer has been driven by a love for creating solutions that address significant global challenges.
+
           </p>
 
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+          <p style="text-align: justify;">
+            💻 As a tech enthusiast, I thrive on turning innovative ideas into reality. My academic background in ECE provides me with a unique perspective, blending technology and engineering principles seamlessly. I find joy in architecting robust and scalable solutions, always striving to make a positive impact on the world through my work.
+          </p><p style="text-align: justify;">
+            📸 Beyond the code, I have a keen eye for photography, capturing moments that tell compelling stories. Additionally, I indulge my adventurous side in target shooting, where precision and focus are paramount. These diverse interests shape me into a well-rounded individual, bringing creativity and discipline to both my technical and personal pursuits.
+          </p>
+          <p style="text-align: justify;">
+            I am excited about the endless possibilities at the intersection of technology, innovation, and creativity. Let's connect and explore the incredible journey of problem-solving and discovery together!
           </p>
         </section>
 

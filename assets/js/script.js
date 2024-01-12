@@ -157,3 +157,45 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function fullnameplayAudio() {
+  var audio = new Audio('/assets/intro.mp3'); // Replace 'your-audio-file.mp3' with the actual path to your audio file
+  audio.play();
+
+  var volumeIcon = document.getElementById('volumeIcon');
+  volumeIcon.classList.add('playing');
+
+  audio.onended = function () {
+    volumeIcon.classList.remove('playing');
+  };
+}
+
+
+function calculateExperience(startDate) {
+  // Convert the start date string to a Date object
+  const startDateObj = new Date(startDate);
+  
+  // Get the current date
+  const currentDate = new Date();
+
+  // Calculate the difference in milliseconds
+  const timeDifference = currentDate - startDateObj;
+
+  // Convert the difference to years and months
+  const yearsExperience = timeDifference / (1000 * 60 * 60 * 24 * 365.25);
+  const monthsExperience = (yearsExperience % 1) * 12;
+
+  // Round down years and round up months
+  const roundedYears = Math.floor(yearsExperience);
+  const roundedMonths = Math.ceil(monthsExperience);
+
+  return { years: roundedYears, months: roundedMonths };
+}
+
+
+const startDate = "2022-04-01"; 
+const experience = calculateExperience(startDate);
+
+// Append the experience text to the HTML element with id "experiencedynamic"
+const experiencedynamicElement = document.getElementById("experiencedynamic");
+experiencedynamicElement.innerHTML = `${experience.years}.${experience.months}`;
