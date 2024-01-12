@@ -61,17 +61,23 @@
         </style>
 
         <div class="info-content">
-          <h1 class="name" title="Krunal Rana">Krunal Rana <a class="audio-clip"  id="myintroAudiobtn" style="font-size: 20px; float: inline-end; margin-top: 5px; margin-left: -18px;" onclick="fullnameplayAudio()"><i class="fa fa-volume-up" ></i>  </a> </h1>
+          <h1 class="name" title="Krunal Rana" id="textToRead">Krunal Rana <a class="audio-clip"  id="myintroAudiobtn" style="font-size: 20px; float: inline-end; margin-top: 5px; margin-left: -18px;" ><i class="fa fa-volume-up" ></i>  </a> </h1>
           
-          <audio id="myintroAudio" controls style="display: none;">
+          <!-- <audio id="myintroAudio" controls style="display: none;">
             <source src="/assets/intro.mp3" type="audio/mp3">
-          </audio>
+          </audio> -->
           <script>
-            document.getElementById('myintroAudiobtn').addEventListener('click', function() {
-                  var audio = document.getElementById('myintroAudio');
-                  audio.play();
-                });
-          </script>
+          function readText() {
+            var textToRead = document.getElementById('textToRead').textContent;
+            var words = textToRead.split(' ');
+            var speech = new SpeechSynthesisUtterance();
+            words.forEach(function(word) {
+              speech.text = word;
+              window.speechSynthesis.speak(speech);
+            });
+          }
+          document.getElementById('myintroAudiobtn').addEventListener('click', readText);
+        </script>
           <p class="title">Full Stack Developer | Data Engg</p>
         </div>
 
@@ -97,10 +103,8 @@
 
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:ranakrunal2704@gmail.com" class="contact-link">ranakrunal2704@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
