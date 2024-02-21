@@ -7,23 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Krunal Rana</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- - favicon  -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
+  <!--    - custom css link   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- font owsom  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-  <!--
-    - google font link
-  -->
+  <!--  - google font link  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -31,9 +25,7 @@
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <!--- #MAIN -->
 
   <main>
 
@@ -62,7 +54,6 @@
 
         <div class="info-content">
           <h1 class="name" title="Krunal Rana" id="textToRead">Krunal Rana <a class="audio-clip"  id="myintroAudiobtn" style="font-size: 20px; float: inline-end; margin-top: 5px; margin-left: -18px;" ><i class="fa fa-volume-up" ></i>  </a> </h1>
-          
           <!-- <audio id="myintroAudio" controls style="display: none;">
             <source src="/assets/intro.mp3" type="audio/mp3">
           </audio> -->
@@ -261,17 +252,31 @@
 
           <h3 class="h3 service-title">What i'm doing</h3>
 
+          
+
           <ul class="service-list">
 
             <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.More on this find in Freelance section 
+                </p>
+              </div>
+            </li>
 
+
+            <li class="service-item">
               <div class="service-icon-box">
                 <img src="./assets/images/icon-design.svg
                 " alt="design icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Data Analysis</h4>
 
                 <p class="service-item-text">
                   The most modern and high-quality design made at a professional level.
@@ -279,24 +284,22 @@
               </div>
 
             </li>
-
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
               </div>
-
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
+                <h4 class="h4 service-item-title">Digital Marketing </h4>
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  The most modern and high-quality design made at a professional level.
                 </p>
               </div>
-
             </li>
 
-            <li class="service-item">
+            
+
+            <!-- <li class="service-item">
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
@@ -310,7 +313,7 @@
                 </p>
               </div>
 
-            </li>
+            </li> -->
 
             <li class="service-item">
 
@@ -445,11 +448,9 @@
           <div class="overlay" data-overlay></div>
 
           <section class="testimonials-modal">
-
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
                 <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
@@ -473,9 +474,7 @@
                   elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
               </div>
-
             </div>
-
           </section>
 
         </div>
@@ -554,6 +553,161 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <style>
+            .line_ {
+              border-bottom: 1px solid black;
+              margin: 10px 0;
+            }
+          
+            .content_ {
+              display: flex;
+              align-items: center;
+            }
+          
+            .date_ {
+              margin-right: 10px;
+            }
+            ul.b {
+              list-style-type: square;
+              color:#ffffff;
+              margin-left: 20px;
+            }
+            ul.b li {
+              color:#ffffff;
+            }
+
+          </style>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <div class="h4 timeline-item-title" style="display: flex;">
+                <h4 style="font-size: large;cursor: pointer;">
+                    Ahaguru Education Technology  
+                </h4>
+                <ion-icon name='open-outline' style="margin-left: 3px; font-size: 15px;cursor: pointer;"  onclick="window.open('https://www.ahaguru.com/', '_blank')"></ion-icon>
+                <button class="form-btn" type="submit" data-form-btn="" onclick="" style="cursor: default; padding: 2px; padding-left: 16px; padding-right: 15px; font-size: 10px; border-radius: 5px; background-color: #ceb15a; margin-top: -11px;">
+                  <span>Full Stack Devloper</span>
+                </button>
+              </div>
+              <div class="content_">
+                <div class="date_"><span>Jan 2023 — Present |</span></div>
+                <span class="line_"></span>
+                <ion-icon name='location-sharp' style="color: #ceb15a; float: right margin-left: -3px;"></ion-icon>
+                <span style="float: right;"> Chennai, Tamil Nadu / Bengaluru Karnataka, India · On-site</span>
+              </div>
+              <p class="timeline-text">
+                <p style="color:#ffffff;">Full-stack Development :</p>
+                <ul class="b">
+                  <li>Spearheading analytics dashboard development for mentors, administrators, and the Government of Tamil Nadu. </li>
+                  <li>Collaborating on real-time student performance analysis, teacher evaluation, and business growth tracking.</li>
+                </ul>
+                <br>
+                <p style="color:#ffffff;">Cross-platform API Development :</p>
+                <ul class="b">
+                  <li>Designing & Devlop robust APIs for Ahaguru products and government applications. </li>
+                </ul>
+                <br>
+                <p style="color:#ffffff;">Microservices :</p>
+                <ul class="b">
+                  <li>Architectonic microservices for dynamic student reports and PDF generation for more than 5 lac Students/Month </li>
+                </ul>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Art director</h4>
+
+              <span>2013 — 2015</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="Verify_doc">
+          <style>
+            .row-btn-verify {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+            }
+
+            .col-btn1 {
+                flex: none; /* Adjust as needed */
+            }
+          </style>
+
+          <div class="row-btn-verify">
+            <div class="col-btn1">
+                <button class="form-btn" type="submit" data-form-btn="" onclick="sentmessageVerifydoc(event)">
+                    <ion-icon name="documents-outline" role="img" class="md hydrated" aria-label="documents outline"></ion-icon>
+                    <span>Verify Document</span>
+                  </button>
+            </div>
+            <div class="col-btn1" style="padding-left: 5px;">
+                <button class="form-btn" type="button" data-form-btn="" onclick="sentmessageVerifydoc_linkdin(event)" style="padding: 20px ">
+                    <ion-icon name="logo-linkedin" role="img" class="md hydrated" aria-label="logo linkedin"></ion-icon>
+                </button>
+          </div>
+        </div>
+        
+
+          <script>
+            function sentmessageVerifydoc_linkdin(event) {
+                  event.preventDefault();
+                  console.log("Function works");
+                  // const phoneNumber = '919824085934'; 
+                  // const encodedMessage = encodeURIComponent(`*Hello,Krunal* \n I would like to get in touch regarding Youre Document verification .\n`);
+                  const linkdinUrl = `https://www.linkedin.com/in/krunal-rana/`;
+
+                  window.open(linkdinUrl, '_blank');
+                  window.location.href = '/'; 
+                }
+
+            function sentmessageVerifydoc(event) {
+                  event.preventDefault();
+                  console.log("Function works");
+                  const phoneNumber = '919824085934'; 
+                  const encodedMessage = encodeURIComponent(`*Hello,Krunal* \n I would like to get in touch regarding Youre Document verification .\n`);
+                  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                  window.open(whatsappURL, '_blank');
+                  window.location.href = '/'; 
+                }
+          </script>
+          <br>
+        </section>
+
+        
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
             <h3 class="h3">Education</h3>
           </div>
 
@@ -604,63 +758,6 @@
 
         </section>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
-              <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
 
         <section class="skill">
 
@@ -723,8 +820,11 @@
           </ul>
 
         </section>
-
       </article>
+
+        
+
+        
 
 
 
@@ -1185,7 +1285,7 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="" class="form_connect" data-form>
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
@@ -1195,12 +1295,36 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" disabled data-form-btn  onclick="sentmessage(event)">
               <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
+              <span>Ping me on whatsapp</span>
             </button>
 
           </form>
+          <script>
+            function sentmessage(event) {
+                  event.preventDefault();
+                  console.log("Function works");
+
+                  const form = document.querySelector('.form_connect');
+                  const formData = new FormData(form);
+                  const fullName = formData.get('fullname');
+                  const email = formData.get('email');
+                  const message = formData.get('message');
+
+                  const phoneNumber = '919824085934'; 
+                  const encodedMessage = encodeURIComponent(`Hello, my name is *${fullName}*. \n I would like to get in touch regarding the following: ${message}. \n You can reach me at *${email}*.`);
+
+                  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+                  // Open WhatsApp message link in a new tab
+                  window.open(whatsappURL, '_blank');
+
+                  // Redirect your website to the homepage
+                  window.location.href = '/'; // Replace '/' with the URL of your homepage if necessary
+            }
+
+          </script>
 
         </section>
 
